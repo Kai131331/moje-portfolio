@@ -1,74 +1,88 @@
-/* Resetowanie domyślnych marginesów i paddingów */
+/* Resetowanie podstawowych stylów */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Ustawienia dla całej strony */
+/* Stylowanie body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
 
-/* Stylizacja nagłówka */
+/* Styl nagłówka */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 30px 0;
+    background-color: #4CAF50; /* Zielony kolor */
+    color: white;
+    padding: 40px 0;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
+/* Kontener wewnątrz header */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Stylowanie h1 i p */
+h1 {
     margin-bottom: 10px;
+    font-size: 2.5rem;
 }
 
-header p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
-/* Sekcja projektów */
+/* Stylowanie sekcji projektów */
 .projects {
-    padding: 50px 0;
+    padding: 40px 0;
     background-color: #fff;
 }
 
 .projects h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+/* Karty projektów */
 .project-card {
-    background-color: #e2e2e2;
-    margin: 20px;
+    background-color: #f4f4f4;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
 .project-card a {
+    color: #4CAF50;
     text-decoration: none;
-    color: #007bff;
     font-weight: bold;
-    margin-top: 10px;
-    display: inline-block;
 }
 
-/* Sekcja kontaktu */
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Stylowanie formularza kontaktowego */
 .contact {
-    padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
+    padding: 40px 0;
 }
 
 .contact h2 {
@@ -77,38 +91,51 @@ header p {
     margin-bottom: 20px;
 }
 
-.contact form {
-    max-width: 600px;
+.contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     margin: 0 auto;
 }
 
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    border: none;
+form label {
+    margin-bottom: 5px;
     font-size: 1.1rem;
 }
 
-.contact input[type="submit"]:hover {
-    background-color: #555;
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
 /* Stylizacja stopki */
 footer {
     background-color: #333;
-    color: #fff;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
 }
